@@ -1,0 +1,162 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:focusable="true" >
+
+    <RelativeLayout
+        android:id="@+id/video_back"
+        android:background="@color/black_color"
+        android:layout_width="match_parent"
+        android:layout_height="208dp">
+        <cn.jzvd.JzvdStd
+            android:id="@+id/videoplayer"
+            android:layout_width="match_parent"
+            android:layout_height="208dp"/>
+        <ImageView
+            android:id="@+id/play_view"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@mipmap/play"/>
+
+    </RelativeLayout>
+    
+    <android.support.v4.widget.NestedScrollView
+        android:layout_above="@+id/video_comment_btn"
+        android:layout_below="@+id/video_back"
+        android:duplicateParentState="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <com.android.baselibrary.widget.NoScrollRecyclerView
+                android:id="@+id/video_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                tools:visibility="visible" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <!--键盘输入框-->
+    <RelativeLayout
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/video_chat_back_view"
+        android:layout_marginBottom="250dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/white">
+        <EditText
+            android:layout_toStartOf="@+id/video_chat_send_button"
+            android:id="@+id/video_chat_edit"
+            android:textCursorDrawable="@null"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:drawablePadding="6dp"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:hint="说点什么"
+            android:textColorHint="#B3FFFFFF"
+            android:textColor="@color/white"
+            android:singleLine="true"
+            android:textSize="14sp" />
+        <Button
+            android:layout_marginEnd="14dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/video_chat_send_button"
+            android:layout_gravity="center"
+            android:background="@drawable/main_corners"
+            android:layout_width="48dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="15dp"
+            android:textSize="12sp"
+            style="?android:attr/borderlessButtonStyle"
+            android:textColor="@color/white"
+            android:text="发送"
+            android:layout_alignParentEnd="true"
+            tools:ignore="RtlHardcoded" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_marginTop="9dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/video_back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp">
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_width="15dp"
+            android:scaleType="centerInside"
+            android:layout_height="26dp"
+            android:src="@drawable/jz_click_back_selector"
+            />
+    </RelativeLayout>
+    <!--快来评论-->
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/video_comment_btn"
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+        <View
+            android:background="@color/fenggexian2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp">
+
+        </View>
+        <ImageView
+            android:id="@+id/v_my_head_view"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:src="@mipmap/ic_head_l"/>
+        <RelativeLayout
+            android:background="@drawable/v_gray_borders"
+            android:layout_toRightOf="@+id/v_my_head_view"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="42dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/txt_16"
+                android:text="快来说说你的感想吧"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+
+
+

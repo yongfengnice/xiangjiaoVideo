@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/c_channel_tag_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="centerCrop"
+        app:riv_border_width="0dp"
+        app:riv_corner_radius="5dp"
+        app:riv_mutate_background="true"
+        app:riv_oval="true"
+        app:riv_tile_mode="clamp"
+        android:src="@mipmap/loading" />
+
+    <TextView
+        android:id="@+id/tv_channel_tag_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:singleLine="true"
+        android:textColor="#8d8d8d"
+        android:textSize="12sp"/>
+    <View
+        android:layout_marginTop="25dp"
+        android:visibility="gone"
+        android:id="@+id/channel_bottom_view"
+        android:background="@color/black_color"
+        android:layout_width="match_parent"
+        android:layout_height="6dp">
+
+    </View>
+</LinearLayout>

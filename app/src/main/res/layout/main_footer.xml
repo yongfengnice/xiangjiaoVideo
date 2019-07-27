@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout_footer"
+    android:layout_width="match_parent"
+    android:background="#23272a"
+    android:layout_height="50dp"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#23272a"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+        <!--首页-->
+        <LinearLayout
+            android:id="@+id/bottom_view_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/image_1"
+                style="@style/main_bottom_icon_img"
+                android:background="@drawable/widget_tab_home_bg" />
+            <TextView
+                android:id="@+id/text_1"
+                style="@style/main_bottom_icon_txt"
+                android:text="首页"
+                android:visibility="gone"
+                android:textColor="@color/footer_text_color_selected" />
+        </LinearLayout>
+
+        <!--频道-->
+        <LinearLayout
+            android:id="@+id/bottom_view_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/image_2"
+                style="@style/main_bottom_icon_img"
+                android:background="@drawable/widget_tab_channel_bg" />
+            <TextView
+                android:id="@+id/text_2"
+                style="@style/main_bottom_icon_txt"
+                android:text="频道"
+                android:visibility="gone"
+                android:textColor="@color/footer_text_color_normal" />
+        </LinearLayout>
+
+        <!--发现-->
+        <LinearLayout
+            android:id="@+id/bottom_view_3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/image_3"
+                style="@style/main_bottom_icon_img"
+                android:background="@drawable/widget_tab_find_bg" />
+            <TextView
+                android:id="@+id/text_3"
+                style="@style/main_bottom_icon_txt"
+                android:visibility="gone"
+                android:text="发现"
+                android:textColor="@color/footer_text_color_normal" />
+        </LinearLayout>
+
+        <!--我的-->
+        <LinearLayout
+            android:layout_weight="1"
+            android:id="@+id/bottom_view_4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="6dp">
+
+            <ImageView
+                android:id="@+id/image_4"
+                style="@style/main_bottom_icon_img"
+                android:background="@drawable/widget_tab_mine_bg" />
+
+            <TextView
+                android:id="@+id/text_4"
+                style="@style/main_bottom_icon_txt"
+                android:visibility="gone"
+                android:textColor="@color/footer_text_color_normal"
+                android:text="我的" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

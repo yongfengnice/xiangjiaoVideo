@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.baselibrary">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity android:name=".base.ErrorStackActivity" />
+        <activity android:name=".base.NotFoundActivity" />
+        <activity
+            android:name=".picture.ImagesGridActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".picture.ImagePreviewActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".page.CommonWebViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+
+            <intent-filter>
+                <action android:name="com.android.baselibrary.intent.action.webview" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

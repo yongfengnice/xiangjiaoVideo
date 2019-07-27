@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/tag_list_img_view"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:layout_width="154dp"
+        android:layout_height="106dp"
+        android:background="@color/gray_color"/>
+
+    <LinearLayout
+        android:layout_marginStart="14dp"
+        android:layout_toEndOf="@+id/tag_list_img_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:textColor="@color/black_color"
+            android:text="标题"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:background="@drawable/home_select_corners"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp">
+                <TextView
+                    android:text="标签"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/main_dark_theme_color"
+                    android:textSize="@dimen/txt_16"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginStart="10dp"
+                android:background="@drawable/home_select_corners"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp">
+                <TextView
+                    android:text="标签"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/main_dark_theme_color"
+                    android:textSize="@dimen/txt_16"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:background="@drawable/home_select_corners"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp">
+                <TextView
+                    android:text="标签"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/main_dark_theme_color"
+                    android:textSize="@dimen/txt_16"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginStart="10dp"
+                android:background="@drawable/home_select_corners"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp">
+                <TextView
+                    android:text="标签"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/main_dark_theme_color"
+                    android:textSize="@dimen/txt_16"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

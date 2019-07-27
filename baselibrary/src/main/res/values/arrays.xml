@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <!--已上架 已下架 收藏部分 开始 -->
+
+    <!--已上架 已下架 收藏部分 结束-->
+
+    <!--车辆列表页  开始 -->
+    <string-array name="score_list">
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>35</item>
+    </string-array>
+
+
+</resources>

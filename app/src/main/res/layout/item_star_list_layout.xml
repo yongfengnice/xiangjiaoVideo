@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="144dp"
+    android:background="@color/line_gray"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/star_img_view"
+        android:layout_width="74dp"
+        android:layout_height="74dp"
+        android:scaleType="centerCrop"
+        app:riv_border_width="0dp"
+        app:riv_corner_radius="5dp"
+        app:riv_mutate_background="true"
+        app:riv_oval="true"
+        app:riv_tile_mode="clamp"
+        android:src="@mipmap/loading" />
+
+    <TextView
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/star_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:singleLine="true"
+        android:textColor="#8d8d8d"
+        android:textSize="@dimen/txt_16"
+        android:text="标签" />
+
+</LinearLayout>

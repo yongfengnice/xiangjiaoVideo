@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#11ffffff">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/dialog_corner"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="为正常通话须授予以下权限"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/p_view_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/p_image1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/p_image1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="相机"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/p_view_1"
+                android:id="@+id/p_view_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/p_image2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/p_image2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="录音"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/p_view_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/p_image3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/p_image3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="读取权限"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:divider="@drawable/spacer_medium"
+            android:showDividers="middle"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:orientation="horizontal">
+            <TextView
+                android:gravity="center"
+                android:id="@+id/negativeButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="取消"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+            <TextView
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/positiveButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="去设置"
+                android:textColor="@color/main_theme_color"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

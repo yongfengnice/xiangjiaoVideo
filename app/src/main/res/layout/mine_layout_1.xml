@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/transparent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginBottom="12dp">
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@mipmap/title_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--头像等-->
+        <RelativeLayout
+            android:background="@color/transparent"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/u_image_view"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:scaleType="centerCrop"
+                app:riv_border_width="0dp"
+                app:riv_corner_radius="5dp"
+                app:riv_mutate_background="true"
+                app:riv_oval="true"
+                app:riv_tile_mode="clamp"
+                android:src="@mipmap/ic_head_l" />
+
+            <!--等级-->
+            <RelativeLayout
+                android:layout_marginRight="6.5dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/mine_right_corners"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp">
+                <ImageView
+                    android:id="@+id/vip_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="7dp"
+                    android:src="@mipmap/vip_new"/>
+                <TextView
+                    android:layout_toRightOf="@+id/vip_view"
+                    android:id="@+id/level_text_view"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/txt_14"
+                    android:text="加载中..."
+                    android:layout_margin="4dp"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <!--手机号码-->
+        <RelativeLayout
+            android:id="@+id/touch_login_view"
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <RelativeLayout
+                android:id="@+id/mine_master_view"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    tools:text="sdfs"
+                    android:id="@+id/mine_phone_text"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/txt_14"
+                    android:text=""/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:visibility="invisible"
+                android:id="@+id/mine_nomal_view"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/txt_18"
+                    android:text="看官大人请登录"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <!--广告语-->
+        <TextView
+            android:gravity="center"
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_color"
+            android:textSize="@dimen/txt_13"
+            android:text="看广告、推广可增加更多次数哦～"/>
+
+        <!--底部-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="6dp">
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/mine_times_view"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/txt_25"
+                    android:textColor="@color/main_dark_theme_color"
+                    android:text="0/10"/>
+                <TextView
+                    android:layout_marginBottom="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray_color"
+                    android:textSize="@dimen/txt_11"
+                    android:text="今日剩余观影次数"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tuigunang_view"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:visibility="invisible"
+                    android:id="@+id/next_level_text_view"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/txt_25"
+                    android:textColor="@color/main_dark_theme_color"
+                    android:text="100%"/>
+                <ImageView
+                    android:id="@+id/next_level_img_view"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:src="@mipmap/ic_level1_s"/>
+
+                <TextView
+                    android:id="@+id/ccExNum_text_view"
+                    android:layout_marginBottom="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray_color"
+                    android:textSize="@dimen/txt_11"
+                    android:text="下一等级还差1人"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

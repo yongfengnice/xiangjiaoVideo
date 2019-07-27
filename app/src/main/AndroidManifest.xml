@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.baby.app">
+
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- 多媒体相关 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 外置存储存取权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 如果是安卓8.0，应用编译配置的targetSdkVersion>=26，请务必添加以下权限 -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:name="com.android.baselibrary.base.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.openinstall.APP_KEY"
+            android:value="q0ex4g"/>
+        <!-- umeng -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5ba9d411f1f556acd2000187" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="android" />
+        <!-- activity -->
+        <activity
+            android:name=".splash.WelComeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WelComeTheme"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".modules.home.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <data android:scheme="q0ex4g"/>
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name="com.android.baselibrary.widget.headimage.ClipImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.RegisterActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name=".login.ForgotPwActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.mine.page.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.home.page.HomeClassActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.home.page.HomeHotActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.home.page.HomeStarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.video.page.VideoActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.channel.page.ChannelTagActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.channel.page.TagListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.mine.page.MyCacheActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.mine.page.NotificationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.search.page.SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.mine.page.VipActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".advertise.AdvertiseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.mine.page.AcountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.mine.page.PromoteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.mine.page.ProtocolActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.home.page.StarDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.mine.page.HistroyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.video.page.IntroduceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.video.page.CommentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.mine.page.ErActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.mine.page.NickNameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.mine.page.AlipayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.mine.page.MyPromoteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".modules.mine.page.MyLikeActivity"
+            android:screenOrientation="portrait" />
+        <!-- 播放音乐 -->
+        <service
+            android:name=".service.DownLoadServer"
+            android:enabled="true" />
+
+        <activity
+            android:name=".modules.mine.page.RechargeActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".modules.mine.page.WithDrawActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="#404040"
+    android:gravity="center_vertical">
+
+    <RelativeLayout
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toStartOf="@+id/home_search_right_view"
+        android:id="@+id/home_search_back_view"
+        android:layout_centerVertical="true"
+        android:background="@drawable/home_search_corners"
+        android:layout_width="match_parent"
+        android:layout_height="36dp">
+        <ImageView
+            android:id="@+id/home_seach_img_view"
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/search"/>
+
+        <EditText
+            android:id="@+id/home_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:background="@color/transparent"
+            android:drawablePadding="6dp"
+            android:focusable="false"
+            android:gravity="center|left"
+            android:hint="输入关键词查找片源"
+            android:paddingLeft="28dp"
+            android:paddingRight="20dp"
+            android:singleLine="true"
+            android:textColor="#404040"
+            android:textColorHint="#404040"
+            android:textSize="@dimen/txt_16" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/home_search_right_view"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/home_down_view"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_margin="4dp"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/h_download"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/home_history_view_back"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/home_down_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_margin="4dp"
+                android:id="@+id/home_history_view"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/h_history"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

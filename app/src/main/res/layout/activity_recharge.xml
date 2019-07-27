@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+    
+    <com.android.baselibrary.widget.MClearEditText
+        android:id="@+id/recharge_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="20dp"
+        android:drawablePadding="6dp"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:hint="充值码"
+        android:textColor="@color/black_color"
+        android:singleLine="true"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:id="@+id/rechare_commit"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@drawable/er_left_corner"
+        android:layout_marginTop="20dp"
+        android:layout_width="250dp"
+        android:layout_height="45dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提交"
+            android:textSize="@dimen/txt_16"
+            android:textColor="@color/black_color"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+    
+</LinearLayout>

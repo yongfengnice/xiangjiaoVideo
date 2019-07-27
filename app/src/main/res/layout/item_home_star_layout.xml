@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal">
+    <RelativeLayout
+        android:background="@drawable/home_white_corners"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--头像-->
+        <RelativeLayout
+            android:id="@+id/head_back_view"
+            android:background="@color/transparent"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="14dp"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="5dp">
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_centerInParent="true"
+                android:id="@+id/user_img_view"
+                android:layout_width="61dp"
+                android:layout_height="61dp"
+                android:scaleType="centerCrop"
+                app:riv_mutate_background="true"
+                app:riv_tile_mode="clamp"
+                app:riv_border_width="0dp"
+                app:riv_border_color="#3C666666"
+                app:riv_oval="true"/>
+
+        </RelativeLayout>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/user_name_text_view"
+            android:layout_marginStart="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓名"
+            android:textColor="@color/main_theme_color"
+            android:textSize="@dimen/txt_16"
+            android:layout_toEndOf="@+id/head_back_view"/>
+
+        <TextView
+            android:layout_marginEnd="95dp"
+            android:ellipsize="end"
+            android:layout_below="@+id/user_name_text_view"
+            android:id="@+id/user_info_text_view"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            android:text=""
+            android:textColor="@color/gray_color"
+            android:textSize="@dimen/txt_13"
+            android:layout_toEndOf="@+id/head_back_view"/>
+
+        <RelativeLayout
+            android:id="@+id/view_num_text_view_back"
+            android:layout_alignTop="@+id/user_info_text_view"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/star_corners"
+            android:layout_width="88dp"
+            android:layout_height="25dp">
+            <TextView
+                android:id="@+id/view_num_text_view"
+                android:paddingLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/txt_14"
+                android:textColor="@color/white"
+                android:layout_centerInParent="true"
+                android:text="51部电影"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp">
+
+    <LinearLayout
+        android:layout_marginRight="14dp"
+        android:layout_marginLeft="14dp"
+        android:background="@drawable/card_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/p_task_title_view"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/txt_18"
+            android:textColor="@color/black_color"
+            android:text="每日任务"/>
+        <TextView
+            android:id="@+id/p_task_msg_view"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/txt_14"
+            android:textColor="#6e6e6e"
+            android:text="每日点击广告，当日观影次数+1，次数不累计"/>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

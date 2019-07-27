@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baselibrary/baselibrary.iml" filepath="$PROJECT_DIR$/baselibrary/baselibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imagepickermodule/imagepickermodule.iml" filepath="$PROJECT_DIR$/imagepickermodule/imagepickermodule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jiaozivideoplayer/jiaozivideoplayer.iml" filepath="$PROJECT_DIR$/jiaozivideoplayer/jiaozivideoplayer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kehu_version_5_6.iml" filepath="$PROJECT_DIR$/kehu_version_5_6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/prdownloader/prdownloader.iml" filepath="$PROJECT_DIR$/prdownloader/prdownloader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sources/sources.iml" filepath="$PROJECT_DIR$/sources/sources.iml" />
+      <module fileurl="file://$PROJECT_DIR$/statusbarutil/statusbarutil.iml" filepath="$PROJECT_DIR$/statusbarutil/statusbarutil.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thunder/thunder.iml" filepath="$PROJECT_DIR$/thunder/thunder.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.jwkj:M3U8Manger:v2.3.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c6039db116e0a7da4dbe247e31c9184d/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c6039db116e0a7da4dbe247e31c9184d/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c6039db116e0a7da4dbe247e31c9184d/jars/libs/commons-io-2.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jwkj/M3U8Manger/v2.3.1/9f2370c29f0a07647f754c91b5e42960943637de/M3U8Manger-v2.3.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

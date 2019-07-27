@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_marginLeft="34dp"
+        android:layout_marginRight="34dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/dialog_corner"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:text="温馨提示"
+            android:textSize="@dimen/txt_16"
+            android:layout_marginTop="20dp"
+            android:id="@+id/messge_view"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:textColor="@color/black_color"/>
+
+        <TextView
+            android:layout_below="@+id/messge_view"
+            tools:text="您当前钻石余额为11，是否使用11钻石抵扣0.01元"
+            android:textSize="@dimen/txt_14"
+            android:layout_marginTop="20dp"
+            android:id="@+id/messge_content_view"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:textColor="@color/black_color"/>
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/messge_content_view"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/dimand_btn_1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/fenggexian">
+
+                </View>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="使用钻石并支付"
+                    android:textColor="@color/main_dark_theme_color"
+                    android:textSize="@dimen/txt_15"
+                    android:layout_centerInParent="true"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/fenggexian"
+                    android:layout_alignParentBottom="true">
+
+                </View>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/dimand_btn_2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="不使用钻石"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/txt_15"
+                    android:layout_centerInParent="true"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/fenggexian"
+                    android:layout_alignParentBottom="true">
+
+                </View>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/dimand_btn_3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="取消"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/txt_15"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

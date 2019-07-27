@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@mipmap/s_mine_bg"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:id="@+id/star_head_back_view"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:background="@drawable/main_borders">
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_centerInParent="true"
+            android:id="@+id/star_image_view"
+            android:layout_width="82dp"
+            android:layout_height="82dp"
+            android:scaleType="centerCrop"
+            app:riv_border_width="0dp"
+            app:riv_corner_radius="5dp"
+            app:riv_mutate_background="true"
+            app:riv_oval="true"
+            app:riv_tile_mode="clamp"
+            android:src="@mipmap/ic_head_l" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="-10dp"
+        android:layout_below="@+id/star_head_back_view"
+        android:layout_marginStart="20dp"
+        android:layout_width="84dp"
+        android:layout_height="22dp"
+        android:background="@drawable/star_corners">
+        <TextView
+            android:id="@+id/star_count_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/txt_13"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/star_name_view"
+        android:layout_marginTop="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/txt_23"
+        android:textColor="@color/white"
+        android:layout_toEndOf="@+id/star_head_back_view"
+        android:layout_marginStart="15dp"
+        android:text="桥本有才"/>
+
+    <TextView
+        android:id="@+id/star_data_view"
+        android:layout_below="@+id/star_name_view"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/txt_12"
+        android:textColor="@color/gray_color"
+        android:layout_toEndOf="@+id/star_head_back_view"
+        android:layout_marginStart="15dp"/>
+
+    <RelativeLayout
+        android:id="@+id/back_view"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/back_white"/>
+    </RelativeLayout>
+
+</RelativeLayout>

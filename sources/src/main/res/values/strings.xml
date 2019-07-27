@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">视频</string>
+
+    <string name="login_protocol_text">用户协议</string>
+    <!--我的-->
+    <string name="audit_no_change">审核中无法修改</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- WXPayEntryActivity -->
+    <string name="app_tip">提示</string>
+    <string name="pay_result_tip">这个界面用于显示第三方app通过微信支付的结果</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+
+    <!--提示-->
+    <string name="web_failed">网络加载失败</string>
+
+
+</resources>

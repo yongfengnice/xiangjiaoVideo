@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.tgio:rncryptor-native:0.0.9@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7a71735323b7cb0565769d77ec43c23c/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7a71735323b7cb0565769d77ec43c23c/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.tgio/rncryptor-native/0.0.9/daba6b7fd19e887aecfe6e3b6370ef11f24809db/rncryptor-native-0.0.9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

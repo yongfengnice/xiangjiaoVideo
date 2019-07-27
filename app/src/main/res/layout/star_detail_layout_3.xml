@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="23dp"
+            android:layout_width="2dp"
+            android:layout_height="16dp"
+            android:background="@color/main_theme_color">
+
+        </View>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_16"
+            android:text="相关影片"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="20dp"/>
+        <RelativeLayout
+            android:id="@+id/star_new_btn"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/star_detail_nomal"
+            android:layout_alignParentEnd="true"
+            android:layout_width="80dp"
+            android:layout_height="24dp">
+            <TextView
+                android:id="@+id/star_new_btn_text"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="最近更新"
+                android:textColor="@color/black"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/star_more_btn"
+            android:layout_toLeftOf="@+id/star_new_btn"
+            android:layout_marginEnd="20dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/star_detail_nomal"
+            android:layout_width="80dp"
+            android:layout_height="24dp">
+            <TextView
+                android:id="@+id/star_more_btn_text"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="最多播放"
+                android:textColor="@color/black"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#e9e9e9">
+
+    </View>
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:background="@color/transparent"
+        android:id="@+id/star_detial_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+</LinearLayout>

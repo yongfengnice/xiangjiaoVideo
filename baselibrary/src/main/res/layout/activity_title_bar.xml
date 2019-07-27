@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false">
+    <TextView
+        android:id="@+id/status_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/base_rootView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/id_title_bar"
+            layout="@layout/title_layout_activity" />
+
+        <include
+            android:id="@+id/id_title_shadow"
+            android:visibility="gone"
+            layout="@layout/layout_shadow" />
+
+        <View
+            android:id="@+id/title_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_gray">
+        </View>
+
+        <FrameLayout
+            android:id="@+id/title_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <com.android.baselibrary.widget.TipTextView
+        android:id="@+id/ttv_read_more"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="Toast提醒"
+        android:textColor="@color/black"
+        android:visibility="gone" />
+</FrameLayout>

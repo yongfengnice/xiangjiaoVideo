@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/video_layout_4"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="15dp">
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_color"
+            android:text="猜你喜欢"
+            android:textSize="@dimen/txt_18"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/transparent"
+        android:id="@+id/v_like_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/video_more_btn"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/v_n_more_text_view"
+                android:layout_marginTop="15dp"
+                android:textSize="@dimen/txt_14"
+                android:textColor="@color/main_dark_theme_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查看更多"/>
+            <ImageView
+                android:id="@+id/v_n_more_img"
+                android:layout_marginStart="4dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/v_n_more_text_view"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:background="@mipmap/ic_av_more"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

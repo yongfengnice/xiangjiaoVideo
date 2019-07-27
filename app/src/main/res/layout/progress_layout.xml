@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/umeng_update_dialog_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/qingshaohou"
+        android:layout_marginLeft="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="15dp"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray_color"
+        android:text="请稍后:"/>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_below="@+id/qingshaohou"
+        android:layout_marginTop="10dp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:progressDrawable="@drawable/progress_webview"
+        android:max="100"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:id="@+id/persent"
+        android:layout_below="@+id/progress"
+        android:layout_marginBottom="14dp"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignLeft="@+id/progress"
+        android:gravity="center"
+        android:text="0%"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

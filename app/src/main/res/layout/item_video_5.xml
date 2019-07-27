@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+    <!--top line-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/fenggexian">
+    </View>
+    <!--评论数量-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/v_commont_title_view"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/txt_18"
+            android:textColor="@color/black_color"
+            android:text="全部评论"/>
+        <TextView
+            android:id="@+id/video_comment_view2"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="4dp"
+            android:textSize="@dimen/txt_16"
+            android:textColor="@color/gray_color"
+            android:layout_toEndOf="@+id/v_commont_title_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <!--bottom line-->
+    <View
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/fenggexian">
+    </View>
+    <!--列表-->
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/transparent"
+        android:id="@+id/v_comment_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" />
+
+</LinearLayout>

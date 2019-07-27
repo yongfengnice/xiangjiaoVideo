@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--主题颜色-->
+    <color name="colorPrimary">#FF000000</color>
+    <color name="colorPrimaryDark">#FF000000</color>
+    <color name="colorAccent">#FF000000</color>
+
+    <color name="main_theme_color">#FA7334</color>
+    <color name="main_dark_theme_color">#FA7334</color>
+    <color name="main_back_color">#FFFFFF</color>
+
+
+    <!--页面背景-->
+    <color name="bg_gray">#F6F6F6</color>
+
+    <color name="line_gray">#ededed</color>
+    <!--红色-->
+    <color name="color_red">#FF4545</color>
+    <!--声优详情底部-->
+    <color name="color_girl_bottom">#F6F6F6</color>
+    <!--覆盖颜色-->
+    <color name="bgColor_overlay">#60000000</color>
+    <!--特殊-->
+    <color name="status_gray">#BDBDBD</color>
+    <color name="bg_gray_pressed">#e8e8e8</color>
+    <color name="txt_height_light_gray">#A3AAB7</color>
+    <color name="txt_light_gray">#898989</color>
+    <color name="txt_light_grey">#999999</color>
+    <color name="txt_light_blue">#0076ff</color>
+    <color name="txt_light_item">#666666</color>
+    <color name="txt_gray">#565656</color>
+
+    <color name="footer_text_color_normal">#9B9B9B</color>
+    <color name="footer_text_color_selected">#9B9B9B</color>
+
+    <!--分割线颜色-->
+    <color name="fenggexian">#E5E5E5</color>
+    <!--分割线颜色-->
+    <color name="fenggexian2">#FFF4F4F4</color>
+    <!--时间灰色色-->
+    <color name="time_gray_color">#B9B9B9</color>
+    <!--subTitle-->
+    <color name="sub_title_color">#F5F5F5</color>
+    <!--透明-->
+    <color name="transparent">#00000000</color>
+    <color name="gray_color">#9B9B9B</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="text_line_color">#dfdfdd</color>
+    <color name="text_black_color">#333333</color>
+    <color name="text_tips_color">#666666</color>
+    <color name="mine_head_color">#cccccc</color>
+    <color name="text_color">#353535</color>
+
+    <!--SWITCH-->
+    <color name="ksw_md_ripple_normal">#1E000000</color>
+    <color name="ksw_md_solid_shadow">#33000000</color>
+    <color name="ksw_md_solid_normal">#ECECEC</color>
+    <color name="ksw_md_solid_disable">#FFFFFF</color>
+    <color name="ksw_md_solid_checked_disable">#aaaaaa</color>
+    <!--微信-->
+    <color name="navpage">#FFE1E8EB</color>
+    <color name="black_color">#FF000000</color>
+    <color name="grey">#E5E5E5</color>
+    <color name="r_gray">#898989</color>
+
+
+
+</resources>

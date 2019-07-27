@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!--名称-->
+    <RelativeLayout
+        android:id="@+id/video_top_1_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            tools:text="阿飞只"
+            android:layout_toStartOf="@+id/video_name_back_view"
+            android:id="@+id/video_name_text_view"
+            android:layout_marginTop="14dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/txt_18"
+            android:textColor="@color/black_color"/>
+
+        <RelativeLayout
+            android:layout_alignParentEnd="true"
+            android:id="@+id/video_name_back_view"
+            android:layout_marginTop="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_centerVertical="true"
+                    android:layout_margin="8dp"
+                    android:id="@+id/left_zan_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/left_zan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/praise_unpress"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    android:id="@+id/zan_present_back_view"
+                    android:layout_toEndOf="@+id/left_zan_back"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content">
+                    <ProgressBar
+                        android:max="100"
+                        android:progress="50"
+                        android:secondaryProgress="0"
+                        android:id="@+id/zan_present"
+                        style="@style/horizontalStyleProgressBarMini"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"/>
+
+                    <TextView
+                        android:id="@+id/video_zan_count"
+                        android:layout_below="@+id/zan_present"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/gray_color"
+                        android:textSize="@dimen/txt_10"
+                        android:text="92%觉得很赞"/>
+
+                </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_centerVertical="true"
+                android:layout_margin="8dp"
+                android:layout_toEndOf="@+id/zan_present_back_view"
+                android:id="@+id/right_zan_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="8dp"
+                    android:id="@+id/right_zan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/unpraise_unpress"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <!--日期-->
+    <RelativeLayout
+        android:id="@+id/video_times_back_view"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_below="@+id/video_top_1_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            tools:text="2019"
+            android:id="@+id/video_left_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RelativeLayout
+            android:id="@+id/video_submit_btn"
+            android:layout_marginEnd="47dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/acount_borders"
+            android:layout_width="62dp"
+            android:layout_height="23dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/txt_12"
+                android:layout_centerInParent="true"
+                android:textColor="@color/main_theme_color"
+                android:text="提交问题"/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/video_ins_view"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/video_times_back_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="简介"
+        android:textSize="@dimen/txt_15"
+        android:textColor="@color/gray_color"
+        android:layout_marginLeft="10dp"/>
+    <!--简介-->
+    <RelativeLayout
+        android:id="@+id/v_introduce_view"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/video_ins_view"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/video_intruduce_view"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="11dp"
+            android:ellipsize="end"
+            android:textSize="@dimen/txt_14"
+            android:lines="2"
+            android:maxLines="2"
+            android:layout_marginEnd="60dp"
+            android:layout_marginStart="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/txt_light_gray"/>
+        <RelativeLayout
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/v_right_img"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_width="6dp"
+                android:layout_height="10.5dp"
+                android:background="@mipmap/tiaozhuan"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line_video_1"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/v_introduce_view"
+        android:background="@color/bg_gray">
+    </View>
+
+    <!--评论数/功能-->
+    <RelativeLayout
+        android:id="@+id/video_comment_3"
+        android:layout_below="@+id/line_video_1"
+        android:background="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="42dp">
+        <RelativeLayout
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/video_comment_view"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/txt_14"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/video_like_btn"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/video_like_img"
+                    android:layout_margin="10dp"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:src="@mipmap/favor_nopress"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/video_share_btn"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/video_share_img"
+                    android:layout_margin="10dp"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:src="@mipmap/share_d"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/video_down_btn"
+                android:layout_marginEnd="0dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/video_down_img"
+                    android:layout_margin="10dp"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:src="@mipmap/down_d"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/video_comment_3"
+        android:background="@color/bg_gray">
+    </View>
+
+</RelativeLayout>

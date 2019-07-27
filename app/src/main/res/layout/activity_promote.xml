@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    
+    <RelativeLayout
+        android:background="@mipmap/icon_promotion_black"
+        android:layout_width="match_parent"
+        android:layout_height="170dp">
+    </RelativeLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_above="@+id/action_back_view"
+        android:layout_marginTop="10dp"
+        android:background="@color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="none">
+        <LinearLayout
+            android:background="@color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+                <com.android.baselibrary.widget.NoScrollRecyclerView
+                    android:background="@color/transparent"
+                    android:id="@+id/promot_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"/>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/action_back_view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <RelativeLayout
+            android:layout_margin="10dp"
+            android:background="@drawable/promote_borders"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_dark_theme_color"
+                android:text="立即推广"
+                android:textSize="@dimen/txt_16"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

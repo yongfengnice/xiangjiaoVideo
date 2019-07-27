@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/vip_img_view"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@mipmap/card_30"/>
+
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:id="@+id/buy_button"
+        android:layout_marginEnd="26dp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/vip_borders"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp">
+        <TextView
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/txt_15"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            android:text="立即购买"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginLeft="100dp"
+        android:layout_alignTop="@+id/buy_button"
+        android:id="@+id/vip_price_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_24"
+        android:text="24.00"/>
+    <TextView
+        android:layout_toLeftOf="@+id/buy_button"
+        android:layout_alignLeft="@+id/vip_price_view"
+        android:layout_below="@+id/vip_price_view"
+        android:id="@+id/vip_sub_title_view"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#CCFFFFFF"
+        android:textSize="@dimen/txt_14"
+        tools:text="30天30天30天30天30天30天30天30天30天30天30天30天30天30天30天30天"/>
+
+
+</RelativeLayout>

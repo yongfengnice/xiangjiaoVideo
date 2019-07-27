@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:background="@color/black_color"
+        android:layout_width="match_parent"
+        android:layout_height="208dp">
+        <ImageView
+            android:id="@+id/videoCover_img_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+
+       <ImageView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:background="@mipmap/channel_back_top"/>
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@mipmap/play"/>
+
+        <TextView
+            android:id="@+id/find_name_text_view"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <TextView
+            android:id="@+id/find_count_view"
+            android:layout_marginStart="14dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0次播放"
+            android:textColor="@color/gray_color"
+            android:textSize="@dimen/txt_14"/>
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/video_like_btn"
+                android:layout_marginEnd="1dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/video_like_img"
+                    android:layout_margin="10dp"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:src="@mipmap/favor_nopress"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/video_share_btn"
+                android:layout_marginEnd="1dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/video_share_img"
+                    android:layout_margin="10dp"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:src="@mipmap/send_nopress"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/video_down_btn"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/video_down_img"
+                    android:layout_margin="10dp"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:src="@mipmap/download_nopress"
+                    />
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    
+</LinearLayout>

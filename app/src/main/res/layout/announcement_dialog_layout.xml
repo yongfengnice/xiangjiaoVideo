@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="@color/transparent"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ann_title_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:text="标题"/>
+
+            <TextView
+                android:textSize="@dimen/txt_16"
+                android:layout_marginTop="12dp"
+                android:id="@+id/ann_message_view"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/black_color"
+                tools:text="内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容"/>
+
+            <RelativeLayout
+                android:id="@+id/ann_ok_button"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:background="@drawable/login_corners"
+                    android:layout_width="190dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:text="我知道了"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

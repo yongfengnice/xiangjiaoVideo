@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:background="@color/black_color"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/vip_top_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/txt_16"/>
+        <TextView
+            android:layout_marginLeft="16dp"
+            android:layout_below="@+id/vip_top_text1"
+            android:id="@+id/vip_top_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/txt_13"/>
+
+        <RelativeLayout
+            android:id="@+id/dimand_btn"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/orange_cornors"
+            android:layout_width="78dp"
+            android:layout_height="35dp">
+            <TextView
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/txt_14"
+                android:text="领取钻石"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/vip_top_view"
+        android:background="@color/main_dark_theme_color"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <TextView
+            android:id="@+id/vip_text_view"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/txt_14"
+            android:layout_toLeftOf="@+id/vip_btn"
+            android:textColor="@color/white"/>
+        <RelativeLayout
+            android:id="@+id/vip_btn"
+            android:layout_marginRight="9dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/er_right_corner"
+            android:layout_width="85dp"
+            android:layout_height="30dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/txt_13"
+                android:layout_centerInParent="true"
+                android:text="填写充值码" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/vip_top_view2"
+        android:background="#669900"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <RelativeLayout
+            android:layout_centerInParent="true"
+            android:id="@+id/vip_btn2"
+            android:background="@drawable/er_right_corner"
+            android:layout_width="178dp"
+            android:layout_height="30dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/txt_13"
+                android:layout_centerInParent="true"
+                android:text="填写充值码" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/vip_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" />
+    
+</LinearLayout>

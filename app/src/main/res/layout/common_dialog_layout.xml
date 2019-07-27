@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <RelativeLayout
+        android:layout_marginLeft="34dp"
+        android:layout_marginRight="34dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/dialog_corner"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:textSize="@dimen/txt_16"
+            android:layout_marginTop="45dp"
+            android:id="@+id/common_message_view"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:textColor="@color/black_color"/>
+
+        <RelativeLayout
+            android:layout_below="@+id/common_message_view"
+            android:id="@+id/common_ok_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="26dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/login_corners"
+                android:layout_width="190dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:text="邀请好友"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/close_view"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="12dp"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_margin="5dp"
+                android:layout_centerInParent="true"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@mipmap/label_search_uncheck"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

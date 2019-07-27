@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="常见问题"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="36dp"
+                />
+
+            <!--1-->
+            <LinearLayout
+                android:layout_marginTop="22dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1.语音、视频通话秒断、没声音、没画面"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginTop="4dp"
+                        android:id="@+id/text_first_a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="a.先看是否已授予呼呼相机、录音权限。一般在手机设置-应用管理或授权管理中找到呼呼，然后授予相机、录音权限"
+                        android:textColor="#FF9D9D9D"
+                        android:textSize="13dp"
+                        />
+                    <TextView
+                        android:layout_marginTop="4dp"
+                        android:layout_below="@+id/text_first_a"
+                        android:id="@+id/text_first_b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="b.如果已授予以上权限，请尝试重新启动呼呼，或重启手机"
+                        android:textColor="#FF9D9D9D"
+                        android:textSize="13dp"/>
+                    <TextView
+                        android:id="@+id/text1"
+                        android:layout_marginTop="4dp"
+                        android:layout_below="@+id/text_first_b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="c.若以上无效，请按教程授予其他相关权限 http://www.imhuhu.com/phoneset/ (若通话不成功却扣撩币请找客服补偿)"
+                        android:textColor="#FF9D9D9D"
+                        android:textSize="13dp"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            <!--2-->
+            <LinearLayout
+                android:layout_marginTop="22dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2.消息页出现空白"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/text_scend_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="a.尝试重新启动APP"
+                    android:textColor="#FF9D9D9D"
+                    android:textSize="13dp"
+                    />
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:layout_below="@+id/text_scend_a"
+                    android:id="@+id/text_scend_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="b.若以上无效，打开手机设置-应用管理，找到呼呼清理数据，重新登陆"
+                    android:textColor="#FF9D9D9D"
+                    android:textSize="13dp"/>
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_marginTop="4dp"
+                    android:layout_below="@+id/text_scend_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="c.若以上无效，可以去官网下载安装最新版呼呼APP http://imhuhu.com/"
+                    android:textColor="#FF9D9D9D"
+                    android:textSize="13dp"/>
+
+            </LinearLayout>
+            <!--3-->
+            <LinearLayout
+                android:layout_marginTop="22dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3.来电收不到提醒"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="点击链接按教程操作即可 http://www.imhuhu.com/phoneset/"
+                    android:textColor="#FF9D9D9D"
+                    android:textSize="13dp"
+                    />
+            </LinearLayout>
+            <!--4-->
+            <LinearLayout
+                android:layout_marginTop="22dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="若以上无法解决你的问题，请联系客服
+7*24小时客服QQ 627114540 (点击号码可复制)"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+            <!--&lt;!&ndash;5&ndash;&gt;-->
+            <!--<LinearLayout-->
+                <!--android:layout_marginTop="22dp"-->
+                <!--android:layout_marginLeft="13dp"-->
+                <!--android:layout_marginRight="13dp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical">-->
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="5.其他问题请加客服处理"-->
+                    <!--android:textSize="15dp"-->
+                    <!--android:textColor="#FF9D9D9D"/>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="客服24小时在线帮您服务。"-->
+                    <!--android:textColor="#FF9D9D9D"-->
+                    <!--android:textSize="13dp"-->
+                    <!--/>-->
+            <!--</LinearLayout>-->
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

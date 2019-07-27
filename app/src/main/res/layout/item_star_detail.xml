@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/star_detail_img_view"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:layout_width="154dp"
+        android:layout_height="85dp"
+        android:scaleType="centerCrop"
+        android:background="@color/transparent"/>
+
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:gravity="left|center"
+        android:layout_marginStart="14dp"
+        android:layout_toEndOf="@+id/star_detail_img_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/star_detail_text"
+            android:textColor="@color/black_color"
+            android:text="标题"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/star_detail_count"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_color"
+            android:text="8.1万次播放"/>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

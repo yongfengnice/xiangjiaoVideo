@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <!--头部-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+        <TextView
+            android:text="频道"
+            android:id="@+id/c_middle_text"
+            style="@style/TextViewTitle"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/black_color"
+            android:maxEms="8"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textSize="18sp"
+            android:maxWidth="224dp" />
+
+        <LinearLayout
+            android:layout_marginEnd="12dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/c_right_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/select"/>
+            <TextView
+                android:layout_marginLeft="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/txt_16"
+                android:textColor="@color/black_color"
+                android:text="筛选"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.android.baselibrary.widget.RefreshLayout
+        android:background="@color/white"
+        android:layout_marginTop="8dp"
+        android:id="@+id/c_swipeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <android.support.v4.widget.NestedScrollView
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+                <!-- banner-->
+                <include layout="@layout/list_item_banner" />
+
+                <RelativeLayout
+                    android:background="@color/white"
+                    android:id="@+id/c_rl_home_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:descendantFocusability="blocksDescendants"
+                    tools:visibility="visible">
+
+                    <com.android.baselibrary.widget.NoScrollRecyclerView
+                        android:background="@color/white"
+                        android:id="@+id/c_rv_home_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        tools:visibility="visible" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+    </com.android.baselibrary.widget.RefreshLayout>
+</LinearLayout>
